@@ -26,7 +26,7 @@
   /* preset colors */
   --color-text: light-dark(
     oklch(from var(--neutral) var(--700)),
-    oklch(from var(--neutral) var(--100))
+    oklch(from var(--neutral) var(--0))
   );
   --color-bg: light-dark(white, oklch(from var(--primary) var(--800)));
   --color-bg-dark: light-dark(

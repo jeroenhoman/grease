@@ -26,7 +26,6 @@
     margin-block: var(--space-xxl);
     font-size: clamp(3.6em, 8vw, 7em);
     line-height: 1;
-    color: var(--color-accent);
     z-index: var(--z-2);
   }
 
