@@ -2,6 +2,14 @@
 text: decouple semantics from presentation
 ---------------------------------------------------------------------------- */
 
+.font-family-main{
+	font-family: var(--font-family-main);
+}
+
+.font-family-secondary {
+	font-family:var(--font-family-secondary);
+}
+
 .font-size-xxxs {
 	font-size: var(--font-size-xxxs);
 }

@@ -20,7 +20,7 @@
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-xl);
   text-wrap: balance;
   line-height: var(--line-height-fluid);
@@ -93,7 +93,7 @@ mark {
 
 :where(a, a:visited) {
   color: var(--color-link);
-  text-decoration-thickness: var(--border-width-md);
+  text-decoration-thickness: var(--border-width-lg);
   text-underline-offset: 0.15rem;
   transition: text-decoration-thickness 0.1s ease, color 0.1s ease;
 }
@@ -101,6 +101,8 @@ mark {
 @media (--hover) {
   a:hover {
     text-decoration-thickness: calc(var(--border-width-md) * 1.5);
+      text-underline-offset: 0.25rem;
+
   }
 }
 

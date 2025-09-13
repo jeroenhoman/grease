@@ -19,13 +19,13 @@
   --900: 18% calc(c / 2) h;
 
   /* source colors */
-  --neutral: #d5dedf;
-  --primary: #9ac2c5;
-  --secondary: oklch(70% 0.15 200deg);
+  --neutral: #ECEAE0;
+  --primary: oklab(89.869% -0.0254 0.18385);
+  --secondary: #0D2023;
 
   /* preset colors */
   --color-text: light-dark(
-    oklch(from var(--neutral) var(--700)),
+    oklch(fvar(--secondary)),
     oklch(from var(--neutral) var(--0))
   );
   --color-bg: light-dark(white, oklch(from var(--primary) var(--800)));
@@ -38,7 +38,7 @@
     oklch(from var(--primary) var(--300))
   );
   --color-link: light-dark(
-    oklch(from var(--secondary) var(--500)),
+    oklch(fvar(--secondary)),
     oklch(from var(--secondary) var(--200))
   );
   --color-border: light-dark(
@@ -67,10 +67,10 @@
   --------------------------------------------------------------------------- */
 
   /* font stacks */
-  --font-family-main: "Sentient", system-ui, -apple-system, blinkmacsystemfont,
+  --font-family-main: "Satoshi", system-ui, -apple-system, blinkmacsystemfont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", arial, sans-serif;
-  --font-family-heading: "Satoshi";
+  --font-family-secondary: "Satoshi";
   --font-family-code: ui-monospace, menlo, monaco, "Cascadia Mono",
     "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -82,6 +82,7 @@
   --font-weight-lg: 500;
   --font-weight-xl: 700;
   --font-weight-xxl: 800;
+  --font-weight-xxxl: 900;
   --font-weight: var(--font-weight-sm);
 
   /* font size */
@@ -136,7 +137,8 @@
   /* border width */
   --border-width-sm: 0.0625rem;
   --border-width-md: 0.1rem;
-  --border-width-lg: 0.25rem;
+  --border-width-lg: 0.175rem;
+  --border-width-xl: 0.25rem;
 
   /* ---------------------------------------------------------------------------
   z-index

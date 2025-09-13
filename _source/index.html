@@ -2,9 +2,10 @@
 title: Grease
 description: Grease takes the friction out of building fast, adaptable, aesthetic websites.
 layout: base.html
+stylesheet: /assets/css/pages/home.css
+
 # noindex: true
 # canonical: https://example.com/page.html
-permalink: false
 ---
 
 {% comment %}
@@ -12,3 +13,63 @@ permalink: false
 
   That way, you still have the docs and kitchen sink at /docs while you build out your site. The kitchen sink is a helpful tool for seeing all the changes you make in one place!
 {% endcomment %}
+<div class="grid pt-xl">
+  <!-- <header id="header" class="p-lg">
+    <nav class="flex no-wrap justify-between align-items-center">
+      <a class="font-size-xl font-family-secondary font-weight-xl font-size-lg@md font-weight-md undecorated button --simple  pt-0 pb-0 pb-xs@md" href="/">
+        
+      </a>
+     <div class="inline-flex gap-xs shrink align-items-center">
+        <ul class="docs-nav-group unlisted inline-flex gap-xs shrink align-items-center">
+        </ul>
+        {% render "docs/theme-picker.html" modes: modes, themes: themes %}
+      </div>
+    </nav>
+  </header> -->
+
+  <main class="notes start-1 span-9">
+    <ul class="notes-list">
+      <li class="flex gap-lg border-bottom pb-lg">
+        <div class="meta font-size-sm"><time class="font-weight-xl">08-09-2025</time><p>803 words</p></div>
+        <section class="font-weight-md">
+          <a href="" class="font-size-lg font-weight-lg">I have feelings about Ai. BIG feelings.</a>
+          <p>Get off my lawn.</p>
+        </section>
+      </li>
+    </ul>
+
+      <!-- <section class="home-intro">
+        <h1 class="home-title">Wel een goed verhaal, maar niet de juiste woorden?</h1>
+        <p>Creatieve schrijver. Hier te krijgen: doordachte woorden die tellen, lekker lezen en die, als het even kan, inspireren en aanzetten tot actie. Helder, maar met resultaat en altijd recht op het doel af.</p>
+      </section> -->
+
+  </main>
+  <aside class="span-3 start-auto font-size-sm">
+    <div class="flex gap-xs align-items-center mb-md">
+      <img src="/assets/images/demanzelf.png" width="50" alt="">
+      <span class="font-size-lg font-weight-lg">Jeroen Homan</span>
+    </div>
+    <div class="bio">
+          <p>
+            Hi, I'm Craig Mod (日本語版),
+            a writer, photographer, & walker.
+          </p>
+          <p>
+            I'm the author of <a href="">Things Become Other Things</a>,
+            and Kissa by Kissa
+            and a handful of other books.
+          </p>
+          <p>
+            Japan has been my home for over 20 years.
+            Hanya Yanagihara is my spirit decorator.
+            James Turrell is my spirit animal.
+            Pizza (toast) is my spirit food.
+            My work is powered by your memberships.
+          </p>
+          <p>
+            I am bad at email, but I do read it all:
+            me@craigmod.com.
+          </p>
+    </div>
+  </aside>
+</div>  

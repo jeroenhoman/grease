@@ -1,0 +1,25 @@
+
+.home {
+    background-color: var(--neutral);
+}
+
+.home-intro {
+    padding:var(--space-xxl) 0;
+    & .home-title {
+        font-size:var(--font-size-poster);
+        font-weight:var(--font-weight-xxxl);
+        margin-block-end: var(--space-md);
+    }
+
+    & p {
+        max-width:var(--line-length-md);
+    }
+
+}
+
+
+.bio {
+    & p {
+        margin-bottom: var(--space-sm);
+    }
+}
