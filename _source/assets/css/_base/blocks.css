@@ -51,6 +51,7 @@ body {
 	overflow-x: clip;
 	font-family: var(--font-family-main);
 	font-size: var(--font-size-base);
+	font-weight:var(--font-weight);
 	line-height: var(--line-height-fluid);
 }
 

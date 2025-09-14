@@ -3,7 +3,8 @@ title: Grease
 description: Grease takes the friction out of building fast, adaptable, aesthetic websites.
 layout: base.html
 stylesheet: /assets/css/pages/home.css
-
+eleventyImport:
+  collections: ["notes"]
 # noindex: true
 # canonical: https://example.com/page.html
 ---
@@ -29,13 +30,28 @@ stylesheet: /assets/css/pages/home.css
 
   <main class="notes start-1 span-9">
     <ul class="notes-list">
-      <li class="flex gap-lg border-bottom pb-lg">
+      {%- for post in collections.notes -%}
+        <li class="flex gap-lg border-bottom pb-lg">
+          <div class="meta font-size-sm">
+            <time class="font-weight-xl">{{ post.data.intro.date }}</time>
+            <p>{{ post.data.intro.wordcount }} words</p>
+          </div>
+          <section class="">
+            <a href="{{ post.data.title | slugify }}}" class="font-size-lg button --simple">{{ post.data.title }}</a>
+            <p class="">{{ post.data.intro.summary }}</p>
+          </section>
+        </li>
+      {%- endfor -%}
+
+
+
+      <!-- <li class="flex gap-lg border-bottom pb-lg">
         <div class="meta font-size-sm"><time class="font-weight-xl">08-09-2025</time><p>803 words</p></div>
-        <section class="font-weight-md">
-          <a href="" class="font-size-lg font-weight-lg">I have feelings about Ai. BIG feelings.</a>
+        <section class="">
+          <a href="" class="font-size-lg">I have feelings about Ai. BIG feelings.</a>
           <p class="pt-xs">Get off my lawn.</p>
         </section>
-      </li>
+      </li> -->
     </ul>
 
       <!-- <section class="home-intro">
@@ -47,7 +63,7 @@ stylesheet: /assets/css/pages/home.css
   <aside class="span-3 start-auto font-size-sm">
     <div class="flex gap-xs align-items-center mb-md">
       <img src="/assets/images/demanzelf.png" width="60" alt="">
-      <span class="font-size-lg font-weight-lg">Jeroen Homan</span>
+      <span class="font-size-lg">Jeroen Homan</span>
     </div>
     <div class="bio">
           <p>

@@ -67,17 +67,18 @@
   --------------------------------------------------------------------------- */
 
   /* font stacks */
-  --font-family-main: "Satoshi", system-ui, -apple-system, blinkmacsystemfont,
+  --font-family-main: "ff-meta-serif-web-pro", "Satoshi", system-ui, -apple-system, blinkmacsystemfont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", arial, sans-serif;
-  --font-family-secondary: "Sentient";
+
+  --font-family-secondary: "Satoshi";
   --font-family-code: ui-monospace, menlo, monaco, "Cascadia Mono",
     "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   /* font properties */
   --font-weight-xs: 200;
-  --font-weight-sm: 325;
+  --font-weight-sm: 300;
   --font-weight-md: 400;
   --font-weight-lg: 500;
   --font-weight-xl: 700;
