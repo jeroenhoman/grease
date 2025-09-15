@@ -14,7 +14,7 @@ eleventyImport:
 
   That way, you still have the docs and kitchen sink at /docs while you build out your site. The kitchen sink is a helpful tool for seeing all the changes you make in one place!
 {% endcomment %}
-<div class="grid pt-xxl">
+<div class="grid">
   <!-- <header id="header" class="p-lg">
     <nav class="flex no-wrap justify-between align-items-center">
       <a class="font-size-xl font-family-secondary font-weight-xl font-size-lg@md font-weight-md undecorated button --simple  pt-0 pb-0 pb-xs@md" href="/">
@@ -27,9 +27,9 @@ eleventyImport:
       </div>
     </nav>
   </header> -->
-
-  <main class="notes start-1 span-9">
-    <ul class="notes-list">
+<main class="span-7 start-7">
+  <!-- <main class="notes start-1 span-9"> -->
+    <!-- <ul class="notes-list">
       {%- for post in collections.notes -%}
         <li class="flex gap-lg border-bottom pb-lg">
           <div class="meta font-size-sm">
@@ -42,7 +42,7 @@ eleventyImport:
           </section>
         </li>
       {%- endfor -%}
-
+    </ul> -->
 
 
       <!-- <li class="flex gap-lg border-bottom pb-lg">
@@ -52,15 +52,20 @@ eleventyImport:
           <p class="pt-xs">Get off my lawn.</p>
         </section>
       </li> -->
-    </ul>
+    
 
-      <!-- <section class="home-intro">
-        <h1 class="home-title">Wel een goed verhaal, maar niet de juiste woorden?</h1>
-        <p>Creatieve schrijver. Hier te krijgen: doordachte woorden die tellen, lekker lezen en die, als het even kan, inspireren en aanzetten tot actie. Helder, maar met resultaat en altijd recht op het doel af.</p>
-      </section> -->
+      <section class="home-intro">
+        <h1 class="home-title font-family-main">Jeroen Homan</h1>
+        <p class="font-size-xxl">is a designer, developer & writer, mixing pixels, code and words into things people actually enjoy.</p>
+        <hr/>
+        <div class="">
+          <p>As a designer / product strategist / user interface developer / marketer / hyphenate advocate, Adam takes a holistic approach to creating software that’s simple, practical, and satisfying. He currently leads design at Steady, and has worked at notable software companies like Netlify, Basecamp, and YNAB.</p><br/>
+          <p>His work has won those awards that you suspect might be B.S., and published in those fancy, expensive design books you find in fancy, expensive bookstores. In his idle time, Adam whiles away the days with his family in Sacramento, occasionally pretending he still lives in L.A. Say hi: email, Mastodon, LinkedIn.</p>
+        </div>
+      </section>
 
   </main>
-  <aside class="span-3 start-auto font-size-sm">
+  <!-- <aside class="span-3 start-auto font-size-sm">
     <div class="flex gap-xs align-items-center mb-md">
       <img src="/assets/images/demanzelf.png" width="60" alt="">
       <span class="font-size-lg">Jeroen Homan</span>
@@ -87,5 +92,5 @@ eleventyImport:
             me@craigmod.com.
           </p>
     </div>
-  </aside>
+  </aside> -->
 </div>  
